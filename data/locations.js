@@ -286,6 +286,197 @@ var locations = [
             456,
             -451
         ]
+    },
+    {
+        "id": 36,
+        "description": "Kate McReary's Workplace",
+        "coordinates": [
+            1818,
+            701
+        ]
+    },
+    {
+        "id": 37,
+        "description": "McReary Residence",
+        "coordinates": [
+            1413,
+            616
+        ]
+    },
+    {
+        "id": 38,
+        "description": "Steinway Cemetery, Gravesite of Derrick McReary",
+        "coordinates": [
+            996,
+            992
+        ]
+    },
+    {
+        "id": 39,
+        "description": "Charge Island Cemetery, Gravesite of Francis McReary",
+        "coordinates": [
+            477,
+            334
+        ]
+    },
+    {
+        "id": 40,
+        "description": "The Dakota Building",
+        "coordinates": [
+            321,
+            1931
+        ]
+    },
+    {
+        "id": 41,
+        "description": "Drusilla's",
+        "coordinates": [
+            -141,
+            -274
+        ]
+    },
+    {
+        "id": 42,
+        "description": "Triton Statue",
+        "coordinates": [
+            34,
+            148
+        ]
+    },
+    {
+        "id": 43,
+        "description": "Northwest Bohan Beach",
+        "coordinates": [
+            321,
+            1931
+        ]
+    },
+    {
+        "id": 44,
+        "description": "Dukes Park Tunnel",
+        "coordinates": [
+            833,
+            558
+        ]
+    },
+    {
+        "id": 45,
+        "description": "Leroy's Barber Shop",
+        "coordinates": [
+            -913,
+            1244
+        ]
+    },
+    {
+        "id": 46,
+        "description": "Abandoned Casino",
+        "coordinates": [
+            -1163,
+            1867
+        ]
+    },
+    {
+        "id": 47,
+        "description": "Bahama Mamas",
+        "coordinates": [
+            -379,
+            376
+        ]
+    },
+    {
+        "id": 48,
+        "description": "Maisonette 9",
+        "coordinates": [
+            -449,
+            162
+        ]
+    },
+    {
+        "id": 49,
+        "description": "Hercules Club",
+        "coordinates": [
+            -460,
+            345
+        ]
+    },
+    {
+        "id": 50,
+        "description": "Hawaiian Snow",
+        "coordinates": [
+            -227,
+            32
+        ]
+    },
+    {
+        "id": 51,
+        "description": "Pano360 Ad",
+        "coordinates": [
+            -369,
+            123
+        ]
+    },
+    {
+        "id": 52,
+        "description": "Lucky Winkles in Purgatory",
+        "coordinates": [
+            -451,
+            467
+        ]
+    },
+    {
+        "id": 53,
+        "description": "Steinway Beer Garden",
+        "coordinates": [
+            1170,
+            741
+        ]
+    },
+    {
+        "id": 54,
+        "description": "Meadows Park Globe",
+        "coordinates": [
+            1489,
+            505
+        ]
+    },
+    {
+        "id": 55,
+        "description": "NUCA Museum",
+        "coordinates": [
+            1243,
+            670
+        ]
+    },
+    {
+        "id": 56,
+        "description": "Bucky Sligo's Safehouse",
+        "coordinates": [
+            -1235,
+            1507
+        ]
+    },
+    {
+        "id": 57,
+        "description": "Bryce Dawkins Residence",
+        "coordinates": [
+            -1269,
+            1634
+        ]
+    },
+    {
+        "id": 58,
+        "description": "Port Tudor Entrance",
+        "coordinates": [
+            -1169,
+            644
+        ]
+    },
+    {
+        "id": 59,
+        "description": "Acter Park",
+        "coordinates": [
+            -1756,
+            251
+        ]
     }
 ]
-
