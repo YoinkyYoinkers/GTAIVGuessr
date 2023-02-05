@@ -176,6 +176,10 @@ button:disabled {
     bottom: 10px;
 }
 
+#exitButton:hover {
+    background-color: #262626;
+}
+
 #nextButton, #breakdownButton, #playAgainButton {
     display: none;
 }
