@@ -1,4 +1,4 @@
-var locations = [
+var GAME_LOCATIONS = [
     {
         "id": 0,
         "description": "Barge at Francis International Airport",

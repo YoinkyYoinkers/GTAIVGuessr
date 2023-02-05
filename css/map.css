@@ -1,2 +1,233 @@
-/* OBFUSCATED BY CSSOBFUSCATOR.COM at 2022/08/21 18:49:21 */
-@font-face{font-family:"pricedownblack";src:url("../fonts/pricedown_bl-webfont.woff") format("woff");}@font-face{font-family:"helveticaneueheavy";src:url("../fonts/helveticaneue_heavy-webfont.woff") format("woff");}@font-face{font-family:"helveticaneueheavy";src:url("../fonts/helveticaneue_heavy-webfont.woff") format("woff");}@font-face{font-family:"helveticaneuelight";src:url("../fonts/helveticaneue_light-webfont.woff") format("woff");}@font-face{font-family:"roadgeek_2005_mittelschriftRg";src:url("../fonts/roadgeek_2005_mittelschrift-webfont.woff") format("woff");}[class~=loupe]{display:none;}[class~=loupe],#hintBox{position:absolute;}#map{z-index:1;}#map{height:100%;}#map{width:100%;}#map{background-color:#6f9cb7;}#sidebar{background-color:#313131;}#sidebar{width:30vw;}#breakdown-content,#sidebar{box-shadow:0 .25pc 8px 0 rgba(0,0,0,.2),0 6px .208333333in 0 rgba(0,0,0,.19);}[class~=loupe]{width:2.083333333in;}#image{width:100%;}#image{height:30%;}#image{border-left-width:1.5pt;}[class~=loupe]{height:200px;}#image{border-bottom-width:1.5pt;}#image{border-right-width:1.5pt;}#image{border-top-width:1.5pt;}[class~=loupe],#image{border-left-style:solid;}#image,[class~=loupe]{border-bottom-style:solid;}#image,[class~=loupe]{border-right-style:solid;}[class~=loupe]{border-radius:50%;}[class~=loupe],#image{border-top-style:solid;}#image{border-left-color:#000;}#image{border-bottom-color:#000;}#image{border-right-color:#000;}#image{border-top-color:#000;}[class~=loupe]{border-left-width:.75pt;}[class~=loupe]{border-bottom-width:.75pt;}#image{border-image:none;}#hintBox{z-index:2;}#hintBox{width:12vw;}#hintBox{height:5.5vh;}#hintBox{top:.3vh;}#hintBox{right:.5vw;}#hintBox{background-color:black;}#hintBox{opacity:.8;}[class~=loupe]{border-right-width:.75pt;}#hintBox{line-height:1.5vh;}[class~=loupe]{border-top-width:.75pt;}#breakdown{margin-top:2vh;}#breakdown,#total-points{text-align:center;}#breakdown{font-family:"pricedownblack";}#breakdown{-webkit-text-stroke:.03125in black;}#breakdown{color:white;}#breakdown{font-size:3vw;}#breakdown-content{margin-left:auto;}#breakdown-content{margin-bottom:auto;}#breakdown-content{margin-right:auto;}#breakdown-content{margin-top:6vh;}#breakdown-content{display:none;}#submitButton,#breakdown-content{background-color:#1f1f1f;}#breakdown-content{height:40%;}#breakdown-content{width:90%;}#sidebar-footer,[class~=loupe] img{position:absolute;}#tableHead{font-weight:lighter;}#total-points{font-weight:bold;}#correctIcon{color:green;}#incorrectIcon{color:red;}#hintText{margin-left:.3vw;}[class~=loupe],#submitButton{border-left-color:black;}#hintText{margin-top:.25vw;}#hintText{font-size:.75vw;}[class~=loupe],#submitButton{border-bottom-color:black;}[class~=loupe],#submitButton{border-right-color:black;}#hintText,[class~=table]{font-family:"roadgeek_2005_mittelschriftRg";}#hintText{font-weight:lighter;}#hintText{color:white;}[class~=loupe],#submitButton{border-top-color:black;}#resultText{font-size:1.5vw;}#guessText{font-size:1vw;}#submitButton{font-family:"pricedownblack";}#submitButton{font-size:1.5vw;}[class~=loupe]{border-image:none;}[class~=loupe]{box-shadow:5px 5px .75pc black;}#submitButton{-webkit-text-stroke:.125pc black;}tfoot{text-align:right;}#submitButton{width:50%;}#tooltip-location{font-family:"roadgeek_2005_mittelschriftRg";}#tooltip-location{font-size:.8vw;}#tooltip-location-points{font-size:.6vw;}#tooltip-location-points{line-height:1.5vh;}#tooltip-image{width:29vw;}#tooltip-image{height:27.5vh;}[class~=leaflet-tooltip-pane],#resultText{font-family:"helveticaneueheavy";}#resultText{font-weight:200;}#resultText{color:#577c58;}#right-island,#guessText{font-family:"roadgeek_2005_mittelschriftRg";}[class~=loupe]{background:rgba(0,0,0,.25);}#right-island{font-size:1vw;}#footerText,#guessText{color:white;}#sidebar-footer{width:90%;}[class~=loupe]{overflow:hidden;}#sidebar-footer{bottom:.5vh;}[class~=loupe]{cursor:none;}#sidebar-footer{left:5%;}#sidebar-footer{text-align:center;}[class~=table]{height:100%;}#footerText,#footerTextTwo{font-family:"pricedownblack";}#footerText,#footerTextTwo{font-size:4vw;}#footerText{-webkit-text-stroke:4px black;}[class~=table]{font-size:1.5vh;}#footerText{line-height:2.25pt;}#footerTextTwo{color:black;}button:disabled{cursor:not-allowed;}#footerTextTwo{-webkit-text-stroke:1.5pt white;}[class~=leaflet-tooltip-pane]{font-size:1vw;}[class~=leaflet-tooltip-pane]{box-shadow:0 .041666667in 6pt 0 rgba(0,0,0,.2),0 4.5pt 15pt 0 rgba(0,0,0,.19);}tbody tr{cursor:pointer;}button:disabled{pointer-events:all !important;}
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('../fonts/pricedown_bl-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'helveticaneueheavy';
+    src: url('../fonts/helveticaneue_heavy-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'helveticaneueheavy';
+    src: url('../fonts/helveticaneue_heavy-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'helveticaneuelight';
+    src: url('../fonts/helveticaneue_light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'roadgeek_2005_mittelschriftRg';
+    src: url('../fonts/roadgeek_2005_mittelschrift-webfont.woff') format('woff');
+}
+
+
+#map {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #6f9cb7;
+}
+
+#sidebar {
+    background-color: #313131;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#image {
+    width: 100%;
+    height: 30%;
+    border: 2px solid rgb(0, 0, 0);    
+}
+
+.loupe {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 12px black;
+    background: rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    cursor: none;
+}
+
+.loupe img {
+    position: absolute;
+}
+
+#hintBox {
+    z-index: 2;
+    width: 12vw;
+    height: 6.8vh;    
+    position: absolute;
+    top: 0.3vh;
+    right: 0.5vw;
+    background-color: black;
+    opacity: 0.80;
+    line-height: 1.5vh;
+}
+
+#breakdown {
+    margin-top: 2vh;
+    text-align: center;
+    font-family: "pricedownblack";
+    -webkit-text-stroke: 3px black;
+    color: white;
+    font-size: 3vw;
+}
+
+#breakdown-content {
+    margin: auto;
+    overflow-y: auto;
+    margin-top: 6vh;
+    display: none;
+    background-color: #1f1f1f;
+    height: 40%;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.table {    
+    font-family: "roadgeek_2005_mittelschriftRg";
+    height: 100%;
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+#tableHead {
+    position: sticky;
+    top: 0;
+    font-weight: lighter;
+}
+
+tfoot {
+    text-align: right;
+}
+
+#total-points {
+    text-align: center;
+    font-weight: bold;
+}
+
+#correctIcon {
+    color: green;
+}
+
+#incorrectIcon {
+    color: red;
+}
+
+#hintText {
+    margin-left: 0.3vw;
+    margin-top: 0.25vw;
+    font-size: 0.75vw;
+    font-family: "roadgeek_2005_mittelschriftRg";
+    font-weight: lighter;
+    color: white; 
+}
+
+#hintLocation {
+    float: right;
+    margin-right: 0.3vw;
+    font-weight: bold;
+}
+
+#resultText {
+    font-size: 1.5vw;
+}
+
+#guessText {
+    font-size: 1vw;
+}
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+
+#submitButton, #nextButton, #breakdownButton, #playAgainButton {
+    background-color: #1f1f1f;
+    font-family: "pricedownblack";
+    font-size: 1.5vw;
+    -webkit-text-stroke: 2px black;
+    border-color: black;
+    width: 50%;
+}
+
+#nextButton, #breakdownButton, #playAgainButton {
+    display: none;
+}
+
+.leaflet-tooltip-pane {
+    font-family: "helveticaneueheavy";
+    font-size: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tooltip-location {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    font-size: 0.8vw;
+}
+
+#tooltip-location-points {
+    font-size: 0.6vw;
+    line-height: 1.5vh;
+}
+
+#tooltip-image {
+    width: 29vw;
+    height: 27.5vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#resultText {
+    font-family: "helveticaneueheavy";
+    font-weight: 200;
+    color: #577c58;
+}
+
+#right-island {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    font-size: 1vw;
+}
+
+#guessText {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    color: white;
+}
+
+
+#sidebar-footer {
+    width: 90%;
+    position: absolute;
+	bottom: 0.5vh;
+    left: 5%;
+    text-align:center
+}
+
+#footerText {
+    font-family: "pricedownblack";
+    font-size: 4vw;
+    color: white;
+    -webkit-text-stroke: 4px black;
+    line-height: 3px;
+}
+
+#footerTextTwo {
+    font-family: "pricedownblack";
+    font-size: 4vw;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
