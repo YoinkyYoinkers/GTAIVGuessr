@@ -10,12 +10,8 @@ var parameters = new URLSearchParams(window.location.search);
 var DIFFICULTY = parameters.get("difficulty") == null ? 2 : parameters.get("difficulty");
 var TOTAL_ROUNDS = parameters.get("rounds") == null ? 5 : parameters.get("rounds");	
 
-if (DIFFICULTY > 3) { DIFFICULTY = DEFAULT_DIFFICULTY; }
-if (TOTAL_ROUNDS > 20) { TOTAL_ROUNDS = DEFAULT_ROUNDS; }
-
-if (DIFFICULTY <= 0) { DIFFICULTY = DEFAULT_DIFFICULTY; }
-if (TOTAL_ROUNDS <= 0) { TOTAL_ROUNDS = DEFAULT_ROUNDS; }
-
+if (DIFFICULTY > 3 || DIFFICULTY < 1) { DIFFICULTY = DEFAULT_DIFFICULTY; }
+if (TOTAL_ROUNDS > 20 || TOTAL_ROUNDS < 3) { TOTAL_ROUNDS = DEFAULT_ROUNDS; }
 
 var MAP = L.map('map', {
     renderer: L.canvas(),
@@ -311,6 +307,10 @@ $(document).ready(function() {
 
     $("#playAgainButton").click(function() { 
         window.location.reload();
+    });
+
+    $("#exitButton").click(function() { 
+        window.location.href="index.html";
     });
 });
 

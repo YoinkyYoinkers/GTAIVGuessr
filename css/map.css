@@ -165,6 +165,17 @@ button:disabled {
     width: 50%;
 }
 
+#exitButton {
+    background-color: #1f1f1f;
+    font-family: "pricedownblack";
+    font-size: 22px;
+    -webkit-text-stroke: 2px black;
+    border-color: black;
+    position: absolute; 
+    left: -1vw; 
+    bottom: 10px;
+}
+
 #nextButton, #breakdownButton, #playAgainButton {
     display: none;
 }
