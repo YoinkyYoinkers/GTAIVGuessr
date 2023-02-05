@@ -144,3 +144,30 @@ h1 {
     margin-left: 10px;
     font-size: 24px;
 }
+
+#credit-text {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    color: white;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+#credit-link:link {
+    text-decoration: none;
+	color: rgb(134, 134, 134);
+}
+
+#credit-link:active {
+    text-decoration: none;
+}
+
+
+#credit-link:visited {
+    text-decoration: none;
+	color: rgb(134, 134, 134);
+}
+
+
+#credit-link:hover {
+    color: #666666;
+}
