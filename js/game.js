@@ -228,19 +228,7 @@ $(document).ready(function() {
         totalPoints = 0;
         for (var guess of GUESSES) {
             guessCount++;
-
-            $("#breakdown-table").append(
-                `
-                <tbody id="tableBody" class="align-middle">
-                <tr onmouseover="onRowHover(${guessCount})" onmouseleave="onRowLeave(${guessCount})" onmousedown="onRowClick(${guessCount})">
-                <th>${guessCount}</th>
-                <td id="correct-${guessCount}"></td>
-                <td id="distance-${guessCount}"></td>
-                <td id="check-${guessCount}"></td>
-                <td id="points-${guessCount}"></td>
-                </tr>                 
-                `)
-
+            
             totalPoints += guess[2];
 
             var chosenCoordinates = guess[0].getLatLng();
@@ -250,8 +238,7 @@ $(document).ready(function() {
             var actualDistance = Math.round(MAP.distance(chosenCoordinates, correctCoordinates));
             
             var readableDistance = GetReadableDistance(actualDistance);
-    
-    
+       
             var chosenMarker = new L.marker(chosenCoordinates, {
                 interactive: true,
                 icon: L.icon({
@@ -274,17 +261,24 @@ $(document).ready(function() {
     
             var chosenIslandText = GetIslandFromMarker(chosenMarker);
             var locationIslandText = GetIslandFromMarker(locationMarker);
-    
+            
+            var icon = "<span id='incorrectIcon'>\u274C</span>";
             if (actualDistance <= 25) {
-                $(`#check-${guessCount}`).html("<span id='correctIcon'>\u2714</span>");
-            } else {
-                $(`#check-${guessCount}`).html("<span id='incorrectIcon'>\u274C</span>");
+                icon = "<span id='correctIcon'>\u2714</span>";
             }
     
-            $(`#correct-${guessCount}`).html(locationIslandText);
-            $(`#distance-${guessCount}`).html(readableDistance);
-            $(`#points-${guessCount}`).html(guess[2]);
-            
+            $("#breakdown-table").append(
+                `
+                <tbody id="tableBody" class="align-middle">
+                <tr onmouseover="onRowHover(${guessCount})" onmouseleave="onRowLeave(${guessCount})" onmousedown="onRowClick(${guessCount})">
+                <th>${guessCount}</th>
+                <td>${locationIslandText}</td>
+                <td>${readableDistance}</td>
+                <td>${icon}</td>
+                <td>${guess[2]}</td>
+                </tr>                 
+                `);
+                            
             chosenMarker.bindTooltip(`Guess ${guessCount}, ${readableDistance} away [<b>${guess[2]}</b> points].`);
             locationMarker.bindTooltip(`Guess ${guessCount}, ${readableDistance} away.<br><img id="tooltip-image" src="images/locations/${locationDetails.id}.jpg" /><br><span id="tooltip-location">${locationDetails.description}.<br><span id="tooltip-location-points"<b>${guess[2]}</b> points.</span></span>`, {
                 opacity: 1,
