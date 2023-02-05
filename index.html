@@ -1,103 +1,32 @@
-<meta charset=utf-8 />
-<title>GTA IV: Guessr</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-<script>
-document.addEventListener('contextmenu', event => event.preventDefault());
-</script>
-
-<div id="map">
-</div>
-
-<div id="hintBox">
-	<p id="hintText">Click and drag to pan.<br>Scroll up or down to zoom.<br>Use left-click to select a location.</p>
-</div>
-	
-<div id="sidebar">
-	<div class="image">
-		<img id="image">
-	</div>
-	<div class="loupe"></div>
-	<br>
-	<center><button id="submitButton" type="button" class="btn btn-primary shadow-none" disabled>Guess!</button></center>
-	<br><br>
-	<h2 id="breakdown"></h2>
-	<div id="breakdown-content">
-		<table id="breakdown-table" class="table table-striped table-dark text-center table-hover">
-			<thead id="tableHead">
-			  <tr>
-				<th scope="col">#</th>
-				<th scope="col">Correct Island</th>
-				<th scope="col">Distance Away</th>
-				<th scope="col">Right Area?</th>
-				<th scope="col">Points</th>
-			  </tr>
-			</thead>
-			<tbody id="tableBody" class="align-middle">
-			  <tr onmouseover="onRowHover(1)" onmouseleave="onRowLeave(1)" onmousedown="onRowClick(1)">
-				<th>1</th>
-				<td id="correct-1"></td>
-				<td id="distance-1"></td>
-				<td id="check-1"></td>
-				<td id="points-1"></td>
-			  </tr>
-			  <tr onmouseover="onRowHover(2)" onmouseleave="onRowLeave(2)" onmousedown="onRowClick(2)">
-				<th>2</th>
-				<td id="correct-2"></td>
-				<td id="distance-2"></td>
-				<td id="check-2"></td>
-				<td id="points-2"></td>
-			  </tr>
-			  <tr onmouseover="onRowHover(3)" onmouseleave="onRowLeave(3)" onmousedown="onRowClick(3)">
-				<th>3</th>
-				<td id="correct-3"></td>
-				<td id="distance-3"></td>
-				<td id="check-3"></td>
-				<td id="points-3"></td>
-			  </tr>
-			  <tr  onmouseover="onRowHover(4)" onmouseleave="onRowLeave(4)" onmousedown="onRowClick(4)">
-				<th>4</th>
-				<td id="correct-4"></td>
-				<td id="distance-4"></td>
-				<td id="check-4"></td>
-				<td id="points-4"></td>
-			  </tr>
-			  <tr onmouseover="onRowHover(5)" onmouseleave="onRowLeave(5)" onmousedown="onRowClick(5)">
-				<th>5</th>
-				<td id="correct-5"></td>
-				<td id="distance-5"></td>
-				<td id="check-5"></td>
-				<td id="points-5"></td>
-			  </tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<th id="total-text" colspan="4">Total:</th>
-      				<td id="total-points"></td>
-				  </tr>
-			</tfoot>
-		  </table>
-	</div>
-	<div>
-		<center><h1 id="resultText"></h1></center>
-		<br>
-		<h2 id="guessText"></h2>
-	</div>
-	<div id="sidebar-footer">
-		<h1 id="footerText">GTA IV<h1>
-		<h1 id="footerTextTwo">guessr</h1>
-	</div>
-</div>
-
-
-<head>
-	<link rel="stylesheet" href="css/L.Control.Sidebar.css"/>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-	<link rel="stylesheet" href="css/map.css"/>
-	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
-	<script type="text/javascript" src="data/locations.js"></script>
-	<script src="js/imageHandler.js"></script>
-	<script src="js/L.Control.Sidebar.js"></script>
-	<script src="js/map.js"></script>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css"/>
+  </head>
+  <body>
+    <div class="center-div">
+      <br>
+      <h1 id="game-title">GTA IV</h1>
+      <h1 id="game-subtitle">guessr</h1>
+      <form action="play.html" method="GET">
+        <div class="difficulty">
+          <label for="difficulty-select">Difficulty:</label>
+          <select id="difficulty-select" name="difficulty">
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+          </select>
+        </div>
+        <div class="rounds">
+          <label for="round-amount">Rounds:</label>
+          <input data-slider-id="round-amount-line" name="rounds" type="range" min="3" max="20" value="5" class="slider" id="round-amount"><span id="round-value">5</span>
+        </div>
+        <input type="submit" id="play-button" class="btn btn-primary shadow-none" value="Play">
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+</html>
