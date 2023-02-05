@@ -323,8 +323,8 @@ var GAME_LOCATIONS = [
         "id": 40,
         "description": "The Dakota Building",
         "coordinates": [
-            321,
-            1931
+            -346,
+            824
         ]
     },
     {
