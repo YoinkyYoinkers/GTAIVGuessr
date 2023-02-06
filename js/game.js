@@ -197,6 +197,8 @@ $(document).ready(function() {
     });
 
     $("#breakdownButton").click(function() {
+        MAP.flyTo([0, 0], -2);
+
         document.getElementById("image").remove();
         
         document.getElementById("breakdownButton").style.display = "none";
