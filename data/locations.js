@@ -502,5 +502,45 @@ var GAME_LOCATIONS = [
             -443,
             1155
         ]
+    },
+    {
+        "id": 63,
+        "description": "Burger Shot in The Meat Quater",
+        "coordinates": [
+            -627,
+            180
+        ]
+    },
+    {
+        "id": 64,
+        "description": "Auto Eroticar in Alderney",
+        "coordinates": [
+            -1459,
+            1103
+        ]
+    },
+    {
+        "id": 65,
+        "description": "Leftwood Church",
+        "coordinates": [
+            -1057,
+            1410
+        ]
+    },
+    {
+        "id": 66,
+        "description": "Fanny Crab's Bar and Grill",
+        "coordinates": [
+            -1520,
+            1418
+        ]
+    },
+    {
+        "id": 67,
+        "description": "Police Department in Leftwood",
+        "coordinates": [
+            -1520,
+            1418
+        ]
     }
 ]

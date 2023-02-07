@@ -121,6 +121,30 @@ tfoot {
     font-weight: bold;
 }
 
+#high-score {
+    float: left;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		text-shadow: 1px 1px 2px black;
+	}
+
+	70% {
+		transform: scale(1);
+        color: rgb(255, 234, 114);
+		text-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+        color: white;
+		transform: scale(0.95);
+		text-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
 #correctIcon {
     color: green;
 }
@@ -154,7 +178,7 @@ tfoot {
 button:disabled {
     cursor: not-allowed;
     pointer-events: all !important;
-  }
+}
 
 #submitButton, #nextButton, #breakdownButton, #playAgainButton {
     background-color: #1f1f1f;

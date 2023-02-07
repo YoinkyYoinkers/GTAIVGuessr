@@ -160,12 +160,14 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 24px;
 }
 
-#credit-text, #credit-subtext {
+#credit-text, #credit-subtext, #delete-scores {
     font-family: "roadgeek_2005_mittelschriftRg";
     color: white;
     font-weight: lighter;
     margin-top: 5px;
 }
+
+
 
 #credit-subtext {
     position: absolute;
@@ -173,6 +175,16 @@ input[type="range"]::-webkit-slider-thumb {
     right: 5px;
     color: rgb(134, 134, 134);
     font-size: 13px;
+}
+
+#delete-scores {
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    position: absolute;
+    float: left;
+    bottom: -15px;
+    left: 5px;
+    cursor: pointer;
 }
 
 #credit-link:link {

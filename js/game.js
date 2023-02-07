@@ -307,6 +307,24 @@ $(document).ready(function() {
         document.getElementById("sidebar").style.width = "25vw";
         document.getElementById("hintBox").style.height = "2.5vh";
         document.getElementById("hintText").innerHTML = "Hover over a marker to view details.";
+
+        var bestGame = GetBestGame(TOTAL_ROUNDS);
+
+        if (bestGame != null) {
+            // User has played with this many rounds before
+            if (totalPoints > bestGame.score) {
+                // New high score!
+                $("#high-score").html("NEW HIGHSCORE!");
+            }
+        }       
+
+        RECENT_GAMES.push({
+            date: Date.now(),
+            rounds: GUESSES.length,
+            score: totalPoints
+        });
+
+        localStorage.setItem("recentGames", JSON.stringify(RECENT_GAMES));
     });
 
     $("#playAgainButton").click(function() { 

@@ -1,4 +1,31 @@
 var TOTAL_LOCATIONS = 60;
+var RECENT_GAMES = [];
+
+if (localStorage.getItem("recentGames") != null) {
+    RECENT_GAMES = JSON.parse(localStorage.getItem("recentGames"));
+}
+
+/**
+ * @description Deletes all localStorage high-scores
+ */
+function DeleteScores() {
+    if (confirm("Are you sure you want to delete ALL high-scores?")) {
+        localStorage.clear();
+    }
+}
+
+/**
+ * 
+ * @param {Number} rounds 
+ * @returns {Array} Returns the best game a user has had with the same amount of rounds (Nullable)
+ */
+function GetBestGame(rounds) {
+    var checkList = RECENT_GAMES.filter(game => game.rounds == rounds);
+    if (checkList.length == 0) {
+        return null;
+    }
+    return RECENT_GAMES.reduce((prev, current) => (prev.score > current.score) ? prev : current);
+}
 
 /**
  * @returns {Number} Random number between 0 and total number of locations
