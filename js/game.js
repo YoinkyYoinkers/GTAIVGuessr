@@ -1,4 +1,4 @@
-// Get and set difficulty and round count.
+// Prepare game start
 
 var DEFAULT_DIFFICULTY = 2;
 var DEFAULT_ROUNDS = 5;
@@ -9,7 +9,9 @@ var parameters = new URLSearchParams(window.location.search);
 
 var DIFFICULTY = parameters.get("difficulty") == null ? 2 : parameters.get("difficulty");
 var TOTAL_ROUNDS = parameters.get("rounds") == null ? 5 : parameters.get("rounds");	
+var DEBUG_MODE = parameters.get("debug") == null ? false : true;
 
+// Set default values in case of invalid input
 if (DIFFICULTY > 3 || DIFFICULTY < 1) { DIFFICULTY = DEFAULT_DIFFICULTY; }
 if (TOTAL_ROUNDS > 20 || TOTAL_ROUNDS < 3) { TOTAL_ROUNDS = DEFAULT_ROUNDS; }
 
@@ -76,6 +78,10 @@ MAP.on('click', function(e) {
         })
     }).addTo(MAP);
 
+    if (DEBUG_MODE) {
+        console.log(`X: ${e.latlng.lng}, Y: ${e.latlng.lat}`);
+    }
+
     $("#submitButton").removeAttr('disabled');
 });
 
@@ -116,6 +122,8 @@ $(document).ready(function() {
             })
         }).addTo(MAP);
 
+
+        // Points and result text needs to be reworked
         var zoom;
         var resultText;
         var duration;

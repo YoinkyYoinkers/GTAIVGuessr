@@ -31,6 +31,7 @@ body {
 }
 
 .center-div {
+    position: relative;
     opacity: 95%;
     background-color: #313131;
     width: 60%;
@@ -159,11 +160,19 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 24px;
 }
 
-#credit-text {
+#credit-text, #credit-subtext {
     font-family: "roadgeek_2005_mittelschriftRg";
     color: white;
     font-weight: lighter;
     margin-top: 5px;
+}
+
+#credit-subtext {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    color: rgb(134, 134, 134);
+    font-size: 13px;
 }
 
 #credit-link:link {
