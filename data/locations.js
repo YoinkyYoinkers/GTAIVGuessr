@@ -478,5 +478,29 @@ var GAME_LOCATIONS = [
             -1756,
             251
         ]
+    },
+    {
+        "id": 60,
+        "description": "Bank of Liberty in Chinatown",
+        "coordinates": [
+            -62,
+            -435
+        ]
+    },
+    {
+        "id": 61,
+        "description": "East Holland Police Station",
+        "coordinates": [
+            47,
+            1226
+        ]
+    },
+    {
+        "id": 62,
+        "description": "Burger Shot in Varsity Heights",
+        "coordinates": [
+            -443,
+            1155
+        ]
     }
 ]
