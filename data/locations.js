@@ -542,5 +542,53 @@ var GAME_LOCATIONS = [
             -1520,
             1418
         ]
+    },
+    {
+        "id": 68,
+        "description": "Faustin Mansion",
+        "coordinates": [
+            1348,
+            -845
+        ]
+    },
+    {
+        "id": 69,
+        "description": "Big Al's",
+        "coordinates": [
+            1089,
+            -582
+        ]
+    },
+    {
+        "id": 70,
+        "description": "Donnie's Bar",
+        "coordinates": [
+            -331,
+            -247
+        ]
+    },
+    {
+        "id": 71,
+        "description": "The Triangle",
+        "coordinates": [
+            -202,
+            268
+        ]
+    },
+    {
+        "id": 72,
+        "description": "Statue of Happiness",
+        "coordinates": [
+            -591,
+            -855
+        ]
+    },
+    {
+        "id": 73,
+        "description": "That Hoity Toity Place in TLAD where Stubbs hangs out",
+        "coordinates": [
+            -52,
+            776
+        ]
     }
 ]
