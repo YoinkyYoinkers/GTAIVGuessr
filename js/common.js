@@ -11,6 +11,7 @@ if (localStorage.getItem("recentGames") != null) {
 function DeleteScores() {
     if (confirm("Are you sure you want to delete ALL high-scores?")) {
         localStorage.clear();
+        location.reload();
     }
 }
 

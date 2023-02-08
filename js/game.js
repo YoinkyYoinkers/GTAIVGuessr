@@ -4,6 +4,7 @@ var DEFAULT_DIFFICULTY = 2;
 var DEFAULT_ROUNDS = 5;
 var CURRENT_ROUND = 1;
 var GUESSES = [];
+var START_DATE = Date.now() / 1000;
 
 var parameters = new URLSearchParams(window.location.search);
 
@@ -318,9 +319,12 @@ $(document).ready(function() {
             }
         }       
 
+        var currentDate = Date.now() / 1000;
+
         RECENT_GAMES.push({
-            date: Date.now(),
+            startDate: START_DATE,
             rounds: GUESSES.length,
+            endDate: currentDate,
             score: totalPoints
         });
 

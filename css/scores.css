@@ -1,0 +1,83 @@
+body {
+    background-image: url("../images/bg-image.jpg"); /* Default background image */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+}
+
+
+.center-div {
+    position: absolute;
+    top: 80px;
+    opacity: 95%;
+    background-color: #313131;
+    width: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px solid #131313;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#page-title {
+    font-family: "pricedownblack";
+    font-size: 4vw;
+    color: white;
+    -webkit-text-stroke: 4px black;
+}
+
+#page-subtitle {
+    display: none;
+    font-family: "pricedownblack";
+    font-size: 2.5vw;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+#back-button {    
+    font-family: "roadgeek_2005_mittelschriftRg";
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    position: absolute;
+    float: left;
+    bottom: -15px;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+#delete-scores {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#leaderboard {
+    display: none;
+    margin: auto;
+    overflow-y: auto;
+    background-color: #1f1f1f;
+    width: 90%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table {
+    font-family: "roadgeek_2005_mittelschriftRg";
+    font-size: 1.5vh;
+    margin-bottom: 0;
+}
+
+#tableHead {
+    position: sticky;
+    top: 0;
+    font-weight: lighter;
+}
+

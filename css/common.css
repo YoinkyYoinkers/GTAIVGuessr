@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('../fonts/pricedown_bl-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'helveticaneueheavy';
+    src: url('../fonts/helveticaneue_heavy-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'helveticaneueheavy';
+    src: url('../fonts/helveticaneue_heavy-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'helveticaneuelight';
+    src: url('../fonts/helveticaneue_light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'roadgeek_2005_mittelschriftRg';
+    src: url('../fonts/roadgeek_2005_mittelschrift-webfont.woff') format('woff');
+}
+
+
+#credit-link:link {
+    text-decoration: none;
+	color: rgb(134, 134, 134);
+}
+
+#credit-link:active {
+    text-decoration: none;
+}
+
+
+#credit-link:visited {
+    text-decoration: none;
+	color: rgb(134, 134, 134);
+}
+
+
+#credit-link:hover {
+    color: #666666;
+}
