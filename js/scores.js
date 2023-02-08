@@ -19,7 +19,7 @@ RECENT_GAMES.reverse().forEach(game => {
         <td>${moment.unix(game.startDate).fromNow()}</th>
         <td>${game.rounds}</td>
         <td>${moment.utc((moment(game.endDate) - moment(game.startDate)) * 1000).format('mm:ss')}</td>
-        <td>${game.score}</td>
+        <td>${game.score} / ${game.rounds * 500}</td>
         </tr>                 
         `);
 });
