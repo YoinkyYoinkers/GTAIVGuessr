@@ -590,5 +590,21 @@ var GAME_LOCATIONS = [
             -52,
             776
         ]
+    },
+    {
+        "id": 74,
+        "description": "Grace Ancelotti's House",
+        "coordinates": [
+            -1487,
+            249
+        ]
+    },
+    {
+        "id": 75,
+        "description": "Unfinished Brige on the Northern Expressway, Bohan",
+        "coordinates": [
+            1041,
+            1475
+        ]
     }
 ]

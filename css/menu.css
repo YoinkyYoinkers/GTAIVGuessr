@@ -75,6 +75,7 @@ h1 {
 
 
 input[type=range] {
+    appearance: auto;
     -webkit-appearance: none;
     background-color: rgb(71, 71, 71);
 }
