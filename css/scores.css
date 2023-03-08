@@ -14,6 +14,7 @@ body {
     top: 80px;
     opacity: 95%;
     background-color: #313131;
+    height: 50%;
     width: 60%;
     padding: 30px;
     border-radius: 10px;
@@ -62,17 +63,24 @@ body {
 #leaderboard {
     display: none;
     margin: auto;
-    overflow-y: auto;
     background-color: #1f1f1f;
     width: 90%;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.table {
+table, .table {
+    width: 100%;
     font-family: "roadgeek_2005_mittelschriftRg";
-    font-size: 1.5vh;
+    font-size: 18px;
     margin-bottom: 0;
+    table-layout: fixed;
+    height: 200px;
+}
+
+td {
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 #tableHead {
